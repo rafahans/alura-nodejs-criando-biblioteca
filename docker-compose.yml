@@ -1,0 +1,22 @@
+version: "3.5"
+
+services:
+  node:
+    image: alura-nodejs-criando-biblioteca:latest 
+    build:
+      context: .
+      dockerfile: ./dockerfile
+      args:
+        environment: dev
+        status: instable
+    #    networks:
+    #      networkname:
+    #        ipv4_address: 192.168.0.2
+    container_name: alura-nodejs-criando-biblioteca
+    volumes:
+      - ./be/:/project/
+    restart: unless-stopped
+
+    #networks:
+    #   networname:
+    #     external: true
