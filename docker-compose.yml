@@ -6,6 +6,7 @@ services:
     build:
       context: .
       dockerfile: ./dockerfile
+      image: nodejs:dev
       args:
         environment: dev
         status: instable
