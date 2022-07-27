@@ -1,5 +1,6 @@
 {
   "name": "alura-nodejs-criando-biblioteca",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/rafahans/alura-nodejs-criando-biblioteca/issues"
   },
-  "homepage": "https://github.com/rafahans/alura-nodejs-criando-biblioteca#readme"
+  "homepage": "https://github.com/rafahans/alura-nodejs-criando-biblioteca#readme",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.0.1",
+  "type": "module"
+  }
 }
