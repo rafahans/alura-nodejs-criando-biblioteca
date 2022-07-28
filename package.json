@@ -19,7 +19,6 @@
   "homepage": "https://github.com/rafahans/alura-nodejs-criando-biblioteca#readme",
   "type": "module",
   "dependencies": {
-    "chalk": "^5.0.1",
-  "type": "module"
-  }
+    "chalk": "^5.0.1"
+  }  
 }

@@ -1,9 +1,12 @@
-const chalk = import('chalk');
-const fs = import('fs');
+// const chalk = require("chalk");
+// const fs = require("fs");
 
-const pathToFile = './files/text1.md';
+var chalk = import('chalk');
+var fs = import('fs');
 
-console.log(pathToFile);
+//const pathToFile = './files/';
+
+//console.log(pathToFile);
 
 function errorHandler (err){
 	throw new Error(chalk.red(err));
@@ -11,7 +14,7 @@ function errorHandler (err){
 
 function getFile(pathToFile){
 	const enconding = 'utf-8';
-	fs.readFile(pathtoFile, enconding, (err, data) => {
+	fs.readFile(pathToFile, enconding, (err, data) => {
 		if(err) {
 			errorHandler(err);
 		}
@@ -19,4 +22,4 @@ function getFile(pathToFile){
 	})
 }
 
-getFile(pathToFile);
+getFile("./files/");
